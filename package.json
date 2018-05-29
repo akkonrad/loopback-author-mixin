@@ -1,0 +1,19 @@
+{
+  "name": "loopback-author-mixin",
+  "version": "1.0.0",
+  "description": "Mixin that allows to set content author based on current logged in user.",
+  "main": "author.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkonrad/loopback-author-mixin.git"
+  },
+  "author": "akkonrad",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akkonrad/loopback-author-mixin/issues"
+  },
+  "homepage": "https://github.com/akkonrad/loopback-author-mixin#readme"
+}
