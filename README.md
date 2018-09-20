@@ -21,7 +21,7 @@ Edit `server/model-config.js` file.
   "mixins": [
     "loopback/common/mixins",
     "loopback/server/mixins",
-    "../common/mixins"          // add this line
+    "../node_modules/loopback-author-mixin"     // add this line
   ]
 }
 ...
@@ -35,7 +35,7 @@ Then edit your `model.json` file (eg. `common/models/article.json`);
   "base": "PersistedModel",
   "idInjection": true,
   "mixins": {
-    "ContentAuthor": true       // add this line; default field
+    "Author": true              // add this line; default field
   },
   "properties": { ... },
   "relations": {
@@ -51,7 +51,7 @@ By default `authorId` will be populated with current user ID.
 If you want to use different field name, you need to pass options to the mixin:
 ```
   "mixins": {
-    "ContentAuthor": {
+    "Author": {
       "authorField": "userId"
     }
   },
