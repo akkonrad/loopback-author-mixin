@@ -1,6 +1,6 @@
 {
   "name": "loopback-author-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mixin that allows to set content author based on current logged in user.",
   "main": "author.js",
   "scripts": {
