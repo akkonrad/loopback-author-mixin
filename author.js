@@ -26,9 +26,9 @@ module.exports = function contentAuthor(Model, options) {
    */
   Model.observe('before save', function (ctx, next) {
 
-    if (ctx.instance && ctx.options.authorId) {
+    if (ctx.instance && ctx.options['authorId']) {
       ctx.instance[defaultOptions['authorField']] =
-        ctx.instance[defaultOptions['authorField']] || ctx.options['authorId'];
+        ctx.options['authorId'] || ctx.instance[defaultOptions['authorField']];
     }
 
     next();
